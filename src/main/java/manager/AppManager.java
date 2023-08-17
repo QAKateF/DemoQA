@@ -12,6 +12,7 @@ public interface AppManager {
     @BeforeSuite
     default void init(){
         WEB_DRIVER.navigate().to("https://demoqa.com/");
+        WEB_DRIVER.manage().window().maximize();
         WEB_DRIVER.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
     @AfterSuite

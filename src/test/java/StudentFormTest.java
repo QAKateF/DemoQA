@@ -13,8 +13,14 @@ public class StudentFormTest implements HelperStudent {
 
     @BeforeMethod
     public void precondition(){
+        closeAd();
         selectForms();
         selectPractiseForm();
+    }
+
+    private void closeAd() {
+        JavascriptExecutor js = (JavascriptExecutor) WEB_DRIVER;
+        js.executeScript("document.querySelector('#adplus-anchor').style.display='none'");
     }
 
     @Test
