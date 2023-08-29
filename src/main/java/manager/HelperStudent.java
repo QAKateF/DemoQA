@@ -93,7 +93,7 @@ public interface HelperStudent extends HelperBase{
     }
 
     default void uplodePicture(){
-        WEB_DRIVER.findElement(By.id("uploadPicture")).sendKeys("C:\\Users\\kiril\\Desktop\\Kate\\GitHub\\DemoQA\\student.jpeg");
+        WEB_DRIVER.findElement(By.id("uploadPicture")).sendKeys("C:\\Users\\kiril\\Desktop\\Studies\\GitHub\\DemoQA\\student.jpeg");
     }
 
     default void typeState(String state) {
